@@ -18,7 +18,7 @@
 }
 else
 {
-    <table id="customers" class="table table-hover table-condensed table-­bordered table-striped">
+    <table id="customers" class="table table-hover table-­bordered table-striped">
         <thead class="thead-dark">
             <tr>
                 <th>Id</th>
@@ -42,21 +42,22 @@ else
 @section scripts
 {
     <script>
-    $(document).ready(function(){
-        $("#customers").on("click", ".js-delete", function () {
-            var btn = $(this);
-            bootbox.confirm("Are you sure to delete this customer?", function (result) {                 
-                if (result) {
-                    $.ajax({
-                        url: "../api/customers/" + btn.attr("customerId"),
-                        method: "DELETE",
-                        success: function () {
-                            btn.parents("tr").remove();
-                        }
-                    });
-                }
-            }); 
+        $(document).ready(function () {
+            $("#customers").DataTable();
+            $("#customers").on("click", ".js-delete", function () {
+                var btn = $(this);
+                bootbox.confirm("Are you sure to delete this customer?", function (result) {                 
+                    if (result) {
+                        $.ajax({
+                            url: "../api/customers/" + btn.attr("customerId"),
+                            method: "DELETE",
+                            success: function () {
+                                btn.parents("tr").remove();
+                            }
+                        });
+                    }
+                }); 
+            });
         });
-    });
     </script>
 }
