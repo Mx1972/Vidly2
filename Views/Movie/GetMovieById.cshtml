@@ -1,0 +1,43 @@
+﻿@model Vidly2.Models.Movie
+@{
+    ViewBag.Title = "Get Movie Deteails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var rd = !String.IsNullOrEmpty(Model.ReleaseDate.ToShortDateString()) ? Model.ReleaseDate.ToShortDateString() : string.Empty;
+    var ad = !String.IsNullOrEmpty(Model.AddedDate.ToShortDateString()) ? Model.AddedDate.ToShortDateString() : string.Empty;
+}
+
+
+<div>
+    <h1>Movie Details</h1>
+    <hr />
+    <dl class="dl-horizontal">
+        <dd>
+            <h2>Title:@Html.DisplayFor(model => model.Title)</h2>
+        </dd>
+
+
+    </dl>
+
+    <ul>
+        <li>Genre: @Model.Genre.Description</li>
+        <li>Number in stock: @Model.NumberInStock</li>
+
+        @if (!String.IsNullOrEmpty(rd))
+        {
+            <li>
+                Release Date: @rd
+            </li>
+        }
+        @if (!String.IsNullOrEmpty(ad))
+        {
+            <li>
+                Date added: @ad
+            </li>
+        }
+    </ul>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
