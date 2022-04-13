@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using Vidly2.Models;
 
 namespace Vidly2.DTOs
 {
@@ -12,7 +13,8 @@ namespace Vidly2.DTOs
         public string Name { get; set; }
         public bool IsSubscribedToNewsletter { get; set; }
         public byte MembershipTypeId { get; set; }
-               
+
+        public MemberShipTypeDto MemberShipType { get; set; }       
         //[MinAgeRule]
         public DateTime? DOB { get; set; }
     }

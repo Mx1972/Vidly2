@@ -26,11 +26,11 @@ namespace Vidly2.Controllers
         // GET: Customer
         public ActionResult Index()
         {
-            var customers = _context.Customers.Include(c=>c.MembershipType).ToList();
-            if (customers == null)
-                return HttpNotFound();
+            //var customers = _context.Customers.Include(c=>c.MembershipType).ToList();
+            //if (customers == null)
+            //    return HttpNotFound();
 
-            return View(customers);
+            return View();
         }
 
         //[Route("customer/filter/{id:regex(\\d{1}):range(1,2)}")]
