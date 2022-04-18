@@ -213,74 +213,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202204012056598_InitialModel.cs" />
-    <Compile Include="Migrations\202204012056598_InitialModel.designer.cs">
-      <DependentUpon>202204012056598_InitialModel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202204012123180_AddSubscribedToNewsletter.cs" />
-    <Compile Include="Migrations\202204012123180_AddSubscribedToNewsletter.designer.cs">
-      <DependentUpon>202204012123180_AddSubscribedToNewsletter.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202204012135237_AddMembershipType.cs" />
-    <Compile Include="Migrations\202204012135237_AddMembershipType.designer.cs">
-      <DependentUpon>202204012135237_AddMembershipType.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202204012138528_PopulateMembershipTypes.cs" />
-    <Compile Include="Migrations\202204012138528_PopulateMembershipTypes.designer.cs">
-      <DependentUpon>202204012138528_PopulateMembershipTypes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202204012228259_ApplyAnnotationToCustomer.cs" />
-    <Compile Include="Migrations\202204012228259_ApplyAnnotationToCustomer.designer.cs">
-      <DependentUpon>202204012228259_ApplyAnnotationToCustomer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202204032117285_AddMembershipTypeName.cs" />
-    <Compile Include="Migrations\202204032117285_AddMembershipTypeName.designer.cs">
-      <DependentUpon>202204032117285_AddMembershipTypeName.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202204032125159_updateMemberShipTypeName.cs" />
-    <Compile Include="Migrations\202204032125159_updateMemberShipTypeName.designer.cs">
-      <DependentUpon>202204032125159_updateMemberShipTypeName.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202204032142418_AddCustomerDOB.cs" />
-    <Compile Include="Migrations\202204032142418_AddCustomerDOB.designer.cs">
-      <DependentUpon>202204032142418_AddCustomerDOB.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202204041610077_AddGenreModel.cs" />
-    <Compile Include="Migrations\202204041610077_AddGenreModel.designer.cs">
-      <DependentUpon>202204041610077_AddGenreModel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202204041613490_PopulateGenreTable.cs" />
-    <Compile Include="Migrations\202204041613490_PopulateGenreTable.designer.cs">
-      <DependentUpon>202204041613490_PopulateGenreTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202204041620524_PopulateMoviesTable.cs" />
-    <Compile Include="Migrations\202204041620524_PopulateMoviesTable.designer.cs">
-      <DependentUpon>202204041620524_PopulateMoviesTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202204041930533_RemoveMovieDbSet.cs" />
-    <Compile Include="Migrations\202204041930533_RemoveMovieDbSet.designer.cs">
-      <DependentUpon>202204041930533_RemoveMovieDbSet.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202204041932269_AddMovieDbSet.cs" />
-    <Compile Include="Migrations\202204041932269_AddMovieDbSet.designer.cs">
-      <DependentUpon>202204041932269_AddMovieDbSet.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202204041935465_PopulateGenreAndMoviesTables.cs" />
-    <Compile Include="Migrations\202204041935465_PopulateGenreAndMoviesTables.designer.cs">
-      <DependentUpon>202204041935465_PopulateGenreAndMoviesTables.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202204041941365_PopulateMoviesDT.cs" />
-    <Compile Include="Migrations\202204041941365_PopulateMoviesDT.designer.cs">
-      <DependentUpon>202204041941365_PopulateMoviesDT.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202204061532314_SetRequiredFieldOnCustomer.cs" />
-    <Compile Include="Migrations\202204061532314_SetRequiredFieldOnCustomer.designer.cs">
-      <DependentUpon>202204061532314_SetRequiredFieldOnCustomer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202204061654527_RemoveRequiredFieldOnCustomerDOB.cs" />
-    <Compile Include="Migrations\202204061654527_RemoveRequiredFieldOnCustomerDOB.designer.cs">
-      <DependentUpon>202204061654527_RemoveRequiredFieldOnCustomerDOB.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -610,59 +542,6 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202204012056598_InitialModel.resx">
-      <DependentUpon>202204012056598_InitialModel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202204012123180_AddSubscribedToNewsletter.resx">
-      <DependentUpon>202204012123180_AddSubscribedToNewsletter.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202204012135237_AddMembershipType.resx">
-      <DependentUpon>202204012135237_AddMembershipType.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202204012138528_PopulateMembershipTypes.resx">
-      <DependentUpon>202204012138528_PopulateMembershipTypes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202204012228259_ApplyAnnotationToCustomer.resx">
-      <DependentUpon>202204012228259_ApplyAnnotationToCustomer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202204032117285_AddMembershipTypeName.resx">
-      <DependentUpon>202204032117285_AddMembershipTypeName.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202204032125159_updateMemberShipTypeName.resx">
-      <DependentUpon>202204032125159_updateMemberShipTypeName.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202204032142418_AddCustomerDOB.resx">
-      <DependentUpon>202204032142418_AddCustomerDOB.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202204041610077_AddGenreModel.resx">
-      <DependentUpon>202204041610077_AddGenreModel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202204041613490_PopulateGenreTable.resx">
-      <DependentUpon>202204041613490_PopulateGenreTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202204041620524_PopulateMoviesTable.resx">
-      <DependentUpon>202204041620524_PopulateMoviesTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202204041930533_RemoveMovieDbSet.resx">
-      <DependentUpon>202204041930533_RemoveMovieDbSet.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202204041932269_AddMovieDbSet.resx">
-      <DependentUpon>202204041932269_AddMovieDbSet.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202204041935465_PopulateGenreAndMoviesTables.resx">
-      <DependentUpon>202204041935465_PopulateGenreAndMoviesTables.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202204041941365_PopulateMoviesDT.resx">
-      <DependentUpon>202204041941365_PopulateMoviesDT.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202204061532314_SetRequiredFieldOnCustomer.resx">
-      <DependentUpon>202204061532314_SetRequiredFieldOnCustomer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202204061654527_RemoveRequiredFieldOnCustomerDOB.resx">
-      <DependentUpon>202204061654527_RemoveRequiredFieldOnCustomerDOB.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

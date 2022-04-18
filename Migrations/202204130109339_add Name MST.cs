@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class AddMembershipTypeName : DbMigration
+    public partial class addNameMST : DbMigration
     {
         public override void Up()
         {
@@ -12,7 +12,6 @@
         
         public override void Down()
         {
-            DropColumn("dbo.MembershipTypes", "Name");
         }
     }
 }

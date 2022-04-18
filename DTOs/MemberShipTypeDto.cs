@@ -2,7 +2,7 @@
 {
     public class MemberShipTypeDto
     {
-        public byte Id { get; set; }
+        public byte MembershipTypeId { get; set; }
         public string Name { get; set; }
     }
 }

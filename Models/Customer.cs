@@ -19,8 +19,7 @@ namespace Vidly2.Models
         [Required(ErrorMessage = "Membership Type is a required field.")]
         [Display(Name = "Membership Type")]
         public byte MembershipTypeId { get; set; }
-
-                 
+            
         [Display(Name="Date Of Birth")]
         [MinAgeRule]
         public DateTime? DOB { get; set; }
